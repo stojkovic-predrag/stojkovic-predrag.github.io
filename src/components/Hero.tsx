@@ -1,11 +1,13 @@
+import { MdExpandMore } from 'react-icons/md';
+
 import Image from 'next/image';
-import React from 'react';
 
 import profileImage from '../../public/pedja_resized.png';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className='container mx-auto h-[600px]'>
+    <div className='container mx-auto h-[80vh] flex flex-col mb-16 mt-10'>
       <div className='max-w-6xl w-full h-full mx-auto flex justify-between items-center'>
         <div className='w-7/12'>
           <h2 className='text-6xl font-extrabold mb-4'>
@@ -25,6 +27,11 @@ const Hero = () => {
           height='300'
           className='rounded-lg shadow-lg'
         />
+      </div>
+      <div className='mx-auto w-fit text-blue-600 rounded-full hover:bg-gray-100 cursor-pointer transition-all'>
+        <Link href='#skills'>
+          <MdExpandMore size='3rem' />
+        </Link>
       </div>
     </div>
   );
