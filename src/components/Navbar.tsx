@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header className='py-8 w-full fixed top-0 left-0'>
+    <header className='py-8 w-full fixed top-0 left-0 bg-white z-10'>
       <div className='flex justify-between container mx-auto'>
         <div className='uppercase font-extrabold'>
           <span className='font-normal'>Predrag</span> Stojkovic
@@ -17,9 +17,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link href='#work'>Work</Link>
-            </li>
-            <li>
-              <Link href='#about'>About me</Link>
             </li>
             <li>
               <Link href='#contact'>Contact</Link>
