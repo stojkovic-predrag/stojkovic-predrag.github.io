@@ -3,7 +3,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header className='py-8 w-full fixed top-0 left-0 bg-white z-10'>
+    <header className='py-8 w-full fixed top-0 left-0 bg-white z-10 sm:px-0 px-2'>
       <div className='flex justify-between container mx-auto'>
         <div className='uppercase font-extrabold select-none'>
           <span className='font-normal'>Predrag</span> Stojkovic

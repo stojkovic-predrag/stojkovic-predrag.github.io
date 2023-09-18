@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className='bg-blue-600 py-6 text-white'>
-      <div className='container mx-auto flex justify-between items-center'>
+      <div className='container mx-auto sm:px-0 px-2 flex justify-between items-center'>
         <div className='font-bold text-lg'>
           Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </div>

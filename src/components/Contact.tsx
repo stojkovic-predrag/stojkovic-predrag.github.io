@@ -5,7 +5,7 @@ import { IoMdMail } from 'react-icons/io';
 const Contact = () => {
   return (
     <div className='py-12'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto sm:px-0 px-2'>
         <h4 className='font-bold text-3xl mb-8'>
           Feel free to <span className='text-blue-600'>contact me</span>!
         </h4>
