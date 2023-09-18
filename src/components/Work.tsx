@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import PortfolioItem from './PortfolioItem';
 
 import c2sScreen from '../../public/c2s.png';
@@ -34,7 +32,7 @@ const Work = () => {
             Application that helps you to build nice looking resume in no time.
             It was build fully in <span className='text-blue-600'>React</span>{' '}
             from scratch. I am working constantly on this project, upgrading
-            it's capabilities and UX. It is used very often.
+            it&apos;s capabilities and UX. It is used very often.
           </PortfolioItem>
         </div>
       </div>
