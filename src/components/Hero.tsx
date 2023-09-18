@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import { MdExpandMore } from 'react-icons/md';
 
 import Image from 'next/image';
@@ -29,17 +30,28 @@ const Hero = () => {
             my skills.
           </p>
         </div>
-        <Image
-          src={profileImage}
-          alt='Predrag Stojkovic'
-          className='lg:h-80 w-auto rounded-lg shadow-lg h-72 sm:block hidden'
-        />
+        <AnimatePresence>
+          <motion.div
+            initial={{ y: 100, rotateY: 60, opacity: 0 }}
+            whileInView={{ y: 0, rotateY: 0, opacity: 1 }}
+          >
+            <Image
+              src={profileImage}
+              key='Predrag Stojkovic'
+              alt='Predrag Stojkovic'
+              className='lg:h-80 w-auto rounded-lg shadow-lg h-72 sm:block hidden'
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
-      <div className='mx-auto w-fit text-blue-600 rounded-full hover:bg-gray-100 cursor-pointer transition-all'>
+      <motion.div
+        animate={{ y: [0, 10, 10, 0], transition: { repeat: Infinity } }}
+        className='mx-auto w-fit text-blue-600 rounded-full hover:bg-gray-100 cursor-pointer'
+      >
         <Link href='#skills'>
           <MdExpandMore size='3rem' />
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -4,6 +4,8 @@ import Skills from '@/components/Skills';
 import Work from '@/components/Work';
 import React from 'react';
 
+// import { GetStaticPaths } from 'next';
+
 export default function Home() {
   return (
     <main>
