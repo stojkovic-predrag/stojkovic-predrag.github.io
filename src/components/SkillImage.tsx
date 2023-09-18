@@ -8,7 +8,7 @@ interface SkillImageProps {
 
 const SkillImage = ({ image, alt }: SkillImageProps) => {
   return (
-    <Image src={image} alt={alt} className='md:w-24 h-auto sm:w-20 w-16' />
+    <Image src={image} alt={alt} className='lg:w-26 md:w-20 h-auto w-16' />
   );
 };
 

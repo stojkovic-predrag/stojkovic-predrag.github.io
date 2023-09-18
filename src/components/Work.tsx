@@ -9,7 +9,7 @@ import nodeLogo from '../../public/Node.js_logo.webp';
 const Work = () => {
   return (
     <div className='bg-gradient-to-br from-white to-slate-200 py-12' id='work'>
-      <div className='container mx-auto sm:px-0 px-2'>
+      <div className='container mx-auto sm:px-8 px-2'>
         <h3 className='md:text-3xl text-2xl sm:text-center text-left font-bold md:mb-20 mb-12'>
           Some of my <span className='text-blue-600'>work</span>
         </h3>
