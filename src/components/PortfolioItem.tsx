@@ -41,6 +41,7 @@ const PortfolioItem = ({
         <div className='flex flex-row gap-8 rounded-md bg-gray-500 bg-opacity-5 w-fit py-2 px-4'>
           {stack.map((technology) => (
             <Image
+              key={technology.image.src + technology.alt}
               src={technology.image}
               height={30}
               className='opacity-70'
