@@ -9,7 +9,7 @@ const Navbar = () => {
           <span className='font-normal'>Predrag</span> Stojkovic
         </div>
         <div>
-          <ul className='flex gap-8'>
+          <ul className='flex md:gap-8 sm:gap-4 gap-2'>
             <li>
               <Link href='#hero' onClick={() => window.scrollTo({ top: 0 })}>
                 Home
