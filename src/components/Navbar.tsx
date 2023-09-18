@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <header className='py-8 w-full fixed top-0 left-0 bg-white z-10'>
       <div className='flex justify-between container mx-auto'>
-        <div className='uppercase font-extrabold'>
+        <div className='uppercase font-extrabold select-none'>
           <span className='font-normal'>Predrag</span> Stojkovic
         </div>
         <div>

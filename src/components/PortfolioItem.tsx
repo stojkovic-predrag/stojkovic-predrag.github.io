@@ -7,6 +7,7 @@ interface PortfolioItemProps extends PropsWithChildren {
   image: StaticImageData;
   link?: any;
   reverse?: boolean;
+  stack: { image: StaticImageData; alt: string }[];
 }
 
 const PortfolioItem = ({
@@ -15,6 +16,7 @@ const PortfolioItem = ({
   link,
   children,
   reverse = false,
+  stack,
 }: PortfolioItemProps) => {
   return (
     <article
@@ -27,7 +29,7 @@ const PortfolioItem = ({
           src={image}
           width={500}
           height={400}
-          className='rounded-lg h-[320px] w-[520px] object-cover hover:scale-105 transition-all'
+          className='rounded-lg hover:rounded-md h-[320px] w-[520px] object-cover hover:brightness-110 transition-all'
           alt='C2S Screenshot'
         />
       </Link>
@@ -35,6 +37,16 @@ const PortfolioItem = ({
         <div>
           <h4 className='font-bold text-xl uppercase mb-4'>{title}</h4>
           <p className='leading-7 text-gray-700 text-lg'>{children}</p>
+        </div>
+        <div className='flex flex-row gap-8 rounded-md bg-gray-500 bg-opacity-5 w-fit py-2 px-4'>
+          {stack.map((technology) => (
+            <Image
+              src={technology.image}
+              height={30}
+              className='opacity-70'
+              alt={technology.alt}
+            />
+          ))}
         </div>
         <Link
           href={link}

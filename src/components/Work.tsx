@@ -3,11 +3,14 @@ import PortfolioItem from './PortfolioItem';
 import c2sScreen from '../../public/c2s.png';
 import cvBuilderScreen from '../../public/cvBuilderScreen.png';
 
+import reactLogo from '../../public/React-icon.svg.webp';
+import nodeLogo from '../../public/Node.js_logo.webp';
+
 const Work = () => {
   return (
-    <div className='bg-gradient-to-br from-white to-slate-200 py-10' id='work'>
+    <div className='bg-gradient-to-br from-white to-slate-200 py-12' id='work'>
       <div className='container mx-auto'>
-        <h3 className='text-3xl text-center font-bold mb-16'>
+        <h3 className='text-3xl text-center font-bold pb-20'>
           Some of my <span className='text-blue-600'>work</span>
         </h3>
         <div className='flex flex-col gap-32'>
@@ -15,6 +18,10 @@ const Work = () => {
             title='Companies to Students'
             image={c2sScreen}
             link='https://c2s.fonis.rs'
+            stack={[
+              { image: reactLogo, alt: 'React' },
+              { image: nodeLogo, alt: 'Node.js' },
+            ]}
           >
             Presentational website for student project. I lead the team that
             created this website. We used{' '}
@@ -27,6 +34,7 @@ const Work = () => {
             title='Resume Builder'
             image={cvBuilderScreen}
             link='https://cv.fonis.rs/#/resume-builder'
+            stack={[{ image: reactLogo, alt: 'React' }]}
             reverse
           >
             Application that helps you to build nice looking resume in no time.
