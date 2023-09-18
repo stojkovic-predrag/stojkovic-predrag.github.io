@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className='bg-blue-600 py-6 text-white'>
       <div className='container mx-auto sm:px-0 px-2 flex justify-between items-center'>
-        <div className='font-bold text-lg'>
+        <div className='font-bold sm:text-lg text-base'>
           Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </div>
-        <div className='flex justify-end gap-4 items-center text-2xl'>
+        <div className='flex justify-end sm:gap-4 gap-2 items-center sm:text-2xl text-xl'>
           <Link href='www.linkedin.com/in/predrag-stojkovic'>
             <div className='p-2 rounded-full bg-white bg-opacity-0 hover:bg-opacity-10 transition-all'>
               <FaLinkedinIn />
