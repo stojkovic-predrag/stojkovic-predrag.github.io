@@ -10,10 +10,10 @@ const Work = () => {
   return (
     <div className='bg-gradient-to-br from-white to-slate-200 py-12' id='work'>
       <div className='container mx-auto sm:px-0 px-2'>
-        <h3 className='md:text-3xl text-2xl text-center font-bold pb-20'>
+        <h3 className='md:text-3xl text-2xl text-center font-bold md:mb-20 mb-12'>
           Some of my <span className='text-blue-600'>work</span>
         </h3>
-        <div className='flex flex-col gap-32'>
+        <div className='flex flex-col md:gap-28 gap-20'>
           <PortfolioItem
             title='Companies to Students'
             image={c2sScreen}

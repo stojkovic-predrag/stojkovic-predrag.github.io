@@ -21,23 +21,25 @@ const PortfolioItem = ({
 }: PortfolioItemProps) => {
   return (
     <article
-      className={`flex md:flex-row flex-col-reverse md:gap-16 gap-10 ${
+      className={`flex md:flex-row flex-col-reverse md:gap-16 gap-4 ${
         reverse ? 'md:flex-row-reverse' : ''
       }`}
     >
       <Link href={link} target='_blank'>
         <Image
           src={image}
-          width={500}
-          height={400}
-          className='rounded-lg hover:rounded-md h-[320px] w-[520px] object-cover hover:brightness-110 transition-all'
+          className='rounded-lg hover:rounded-md md:h-[320px] md:w-[520px] h-full w-auto object-cover hover:brightness-110 transition-all'
           alt='C2S Screenshot'
         />
       </Link>
       <div className='w-80 flex flex-col justify-between'>
         <div className='md:mb-0 mb-4'>
-          <h4 className='font-bold text-xl uppercase mb-4'>{title}</h4>
-          <p className='leading-7 text-gray-700 text-lg'>{children}</p>
+          <h4 className='font-bold md:text-xl text-lg uppercase md:mb-4 mb-2'>
+            {title}
+          </h4>
+          <p className='leading-7 text-gray-700 md:text-lg text-base'>
+            {children}
+          </p>
         </div>
         <div className='flex flex-row gap-8 rounded-md bg-gray-500 bg-opacity-5 w-fit py-2 px-4 md:mb-0 mb-4'>
           {stack.map((technology) => (
