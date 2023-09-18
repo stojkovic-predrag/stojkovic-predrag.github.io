@@ -10,7 +10,7 @@ const Work = () => {
   return (
     <div className='bg-gradient-to-br from-white to-slate-200 py-12' id='work'>
       <div className='container mx-auto'>
-        <h3 className='text-3xl text-center font-bold pb-20'>
+        <h3 className='md:text-3xl text-2xl text-center font-bold pb-20'>
           Some of my <span className='text-blue-600'>work</span>
         </h3>
         <div className='flex flex-col gap-32'>

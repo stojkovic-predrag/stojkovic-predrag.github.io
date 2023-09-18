@@ -1,7 +1,31 @@
-import React from 'react';
+import Link from 'next/link';
+import { FaLocationArrow } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <div className='py-12'>
+      <div className='container mx-auto'>
+        <h4 className='font-bold text-3xl mb-8'>
+          Feel free to <span className='text-blue-600'>contact me</span>!
+        </h4>
+        <div className='flex gap-4 items-center mb-2'>
+          <FaLocationArrow className='text-blue-600 text-lg' />{' '}
+          <span className='font-semibold text-gray-700 text-lg'>
+            Belgrade, Serbia
+          </span>
+        </div>
+        <a href='mailto:predragstojkovic.jagodina@gmail.com'>
+          <div className='flex gap-4 items-center'>
+            <IoMdMail className='text-blue-600 text-xl' />{' '}
+            <span className='font-semibold text-gray-700 text-lg'>
+              predragstojkovic.jagodina@gmail.com
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;

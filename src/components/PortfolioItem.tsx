@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React, { PropsWithChildren } from 'react';
+import { FaLink } from 'react-icons/fa';
 
 interface PortfolioItemProps extends PropsWithChildren {
   title: string;
@@ -20,8 +21,8 @@ const PortfolioItem = ({
 }: PortfolioItemProps) => {
   return (
     <article
-      className={`flex gap-16 items-stretch ${
-        reverse ? 'flex-row-reverse' : ''
+      className={`flex md:flex-row flex-col-reverse md:gap-16 gap-10 ${
+        reverse ? 'md:flex-row-reverse' : ''
       }`}
     >
       <Link href={link} target='_blank'>
@@ -34,11 +35,11 @@ const PortfolioItem = ({
         />
       </Link>
       <div className='w-80 flex flex-col justify-between'>
-        <div>
+        <div className='md:mb-0 mb-4'>
           <h4 className='font-bold text-xl uppercase mb-4'>{title}</h4>
           <p className='leading-7 text-gray-700 text-lg'>{children}</p>
         </div>
-        <div className='flex flex-row gap-8 rounded-md bg-gray-500 bg-opacity-5 w-fit py-2 px-4'>
+        <div className='flex flex-row gap-8 rounded-md bg-gray-500 bg-opacity-5 w-fit py-2 px-4 md:mb-0 mb-4'>
           {stack.map((technology) => (
             <Image
               key={technology.image.src + technology.alt}
@@ -52,9 +53,9 @@ const PortfolioItem = ({
         <Link
           href={link}
           target='_blank'
-          className='py-3 px-4 bg-gray-400 w-fit bg-opacity-10 hover:bg-opacity-20 transition-all rounded-xl'
+          className='py-2 px-3 bg-gray-400 text-gray-700 flex gap-2 items-center w-fit bg-opacity-10 hover:bg-opacity-20 transition-all rounded-lg'
         >
-          Live preview
+          <FaLink /> Live preview
         </Link>
       </div>
     </article>
