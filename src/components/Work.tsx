@@ -23,7 +23,7 @@ const Work = () => {
               { image: nodeLogo, alt: 'Node.js' },
             ]}
           >
-            Presentational website for student project. I lead the team that
+            Presentational website for student project. I led the team that
             created this website. We used{' '}
             <span className='text-blue-600'>React</span> to build it from
             scratch. For animations we used{' '}
@@ -37,10 +37,10 @@ const Work = () => {
             stack={[{ image: reactLogo, alt: 'React' }]}
             reverse
           >
-            Application that helps you to build nice looking resume in no time.
-            It was build fully in <span className='text-blue-600'>React</span>{' '}
-            from scratch. I am working constantly on this project, upgrading
-            it&apos;s capabilities and UX. It is used very often.
+            Application that helps you build nice looking resume in no time. It
+            was build fully in <span className='text-blue-600'>React</span> from
+            scratch. I am working constantly on this project, upgrading
+            it&apos;s capabilities and UX. It is used quite often.
           </PortfolioItem>
         </div>
       </div>
