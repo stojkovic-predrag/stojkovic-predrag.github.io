@@ -28,7 +28,7 @@ const PortfolioItem = ({
       <Link href={link} target='_blank'>
         <Image
           src={image}
-          className='rounded-lg hover:rounded-md md:h-[320px] md:w-[520px] h-full w-auto object-cover hover:brightness-110 transition-all'
+          className='rounded-lg hover:rounded-md md:h-[320px] md:w-[520px] h-full w-auto object-cover shadow-sm hover:brightness-110 transition-all'
           alt='C2S Screenshot'
         />
       </Link>
